@@ -1,2 +1,84 @@
 // SCSS!
+<<<<<<< Updated upstream
 h1 { color: pink; }
+=======
+@import "_responsive.scss";
+
+// grids
+$cols: 12;
+$gutter: 20px;
+$view-height: create-vh();
+
+// rows
+.row {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter * 2;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  // &-escaped { margin: $gutter $gutter*-1 $gutter*-1 $gutter*-1; }
+}
+
+// columns
+@mixin make-col($i) {
+  float: left;
+  $width: ($i / $cols);
+  width: percentage($width);
+  padding: 0 $gutter;
+}
+@mixin make-col-offset($i) {
+  float: left;
+  $width: ($i / $cols);
+  margin-left: percentage($width);
+  padding: 0 $gutter;
+}
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    @include make-media-min($breakpoint-lg) { @include make-col($i); };
+  }
+  .col-offset-#{$i} {
+    @include make-media-min($breakpoint-lg) { @include make-col-offset($i); };
+  }
+  .col-md-#{$i} {
+    @include make-media($breakpoint-md, $breakpoint-lg) { @include make-col($i); };
+  }
+  .col-md-offset-#{$i} {
+    @include make-media($breakpoint-md, $breakpoint-lg) { @include make-col-offset($i); };
+  }
+  .col-sm-#{$i} {
+    @include make-media($breakpoint-sm, $breakpoint-md) {
+      @include make-col($i);
+      margin-bottom: 1.3em;
+      // padding-left: 0;
+    };
+  }
+  .col-sm-offset-#{$i} {
+    @include make-media($breakpoint-sm, $breakpoint-md) {
+      @include make-col-offset($i);
+      // padding-left: 0;
+    };
+  }
+  .col-xs-#{$i} {
+    @include make-media(0px, $breakpoint-sm) {
+      @include make-col($i);
+      margin-bottom: 1.3em;
+      padding-left: 0;
+      padding-right: 0;
+    };
+  }
+  .col-xs-offset-#{$i} {
+    @include make-media(0px, $breakpoint-sm) {
+      @include make-col-offset($i);
+      padding-left: 0;
+    };
+  }
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+>>>>>>> Stashed changes
