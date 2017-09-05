@@ -1,8 +1,7 @@
-// SCSS!
-<<<<<<< Updated upstream
-h1 { color: pink; }
-=======
+@import "_reset.scss";
 @import "_responsive.scss";
+
+* { box-sizing: border-box;}
 
 // grids
 $cols: 12;
@@ -11,16 +10,13 @@ $view-height: create-vh();
 
 // rows
 .row {
-  margin-top: $gutter * 2;
-  margin-bottom: $gutter * 2;
-
   &:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  // &-escaped { margin: $gutter $gutter*-1 $gutter*-1 $gutter*-1; }
+  margin: $gutter;
 }
 
 // columns
@@ -28,13 +24,13 @@ $view-height: create-vh();
   float: left;
   $width: ($i / $cols);
   width: percentage($width);
-  padding: 0 $gutter;
+  padding: 0;
 }
 @mixin make-col-offset($i) {
   float: left;
   $width: ($i / $cols);
   margin-left: percentage($width);
-  padding: 0 $gutter;
+  padding: 0;
 }
 @for $i from 1 through $cols {
   .col-#{$i} {
@@ -79,6 +75,5 @@ $view-height: create-vh();
 }
 
 [class*='col-']:last-of-type {
-  padding-right: 0;
+  // padding-right: 0;
 }
->>>>>>> Stashed changes
