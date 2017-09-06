@@ -51,7 +51,7 @@ table {
   box-sizing: border-box; }
 
 .row {
-  margin: 20px 0 20px 20px; }
+  margin: 1.25em 0 1.25em 1.25em; }
   .row:after {
     content: "";
     display: table;
@@ -64,9 +64,7 @@ table {
 @media (min-width: 1200px) {
   .col-1 {
     float: left;
-    width: 8.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 8.33333%; } }
 
 @media (min-width: 1200px) {
   .col-offset-1 {
@@ -76,9 +74,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-1 {
     float: left;
-    width: 8.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 8.33333%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-1 {
@@ -89,8 +85,6 @@ table {
   .col-sm-1 {
     float: left;
     width: 8.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -102,8 +96,6 @@ table {
   .col-xs-1 {
     float: left;
     width: 8.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -114,9 +106,7 @@ table {
 @media (min-width: 1200px) {
   .col-2 {
     float: left;
-    width: 16.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 16.66667%; } }
 
 @media (min-width: 1200px) {
   .col-offset-2 {
@@ -126,9 +116,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-2 {
     float: left;
-    width: 16.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 16.66667%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-2 {
@@ -139,8 +127,6 @@ table {
   .col-sm-2 {
     float: left;
     width: 16.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -152,8 +138,6 @@ table {
   .col-xs-2 {
     float: left;
     width: 16.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -164,9 +148,7 @@ table {
 @media (min-width: 1200px) {
   .col-3 {
     float: left;
-    width: 25%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 25%; } }
 
 @media (min-width: 1200px) {
   .col-offset-3 {
@@ -176,9 +158,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-3 {
     float: left;
-    width: 25%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 25%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-3 {
@@ -189,8 +169,6 @@ table {
   .col-sm-3 {
     float: left;
     width: 25%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -202,8 +180,6 @@ table {
   .col-xs-3 {
     float: left;
     width: 25%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -214,9 +190,7 @@ table {
 @media (min-width: 1200px) {
   .col-4 {
     float: left;
-    width: 33.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 33.33333%; } }
 
 @media (min-width: 1200px) {
   .col-offset-4 {
@@ -226,9 +200,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-4 {
     float: left;
-    width: 33.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 33.33333%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-4 {
@@ -239,8 +211,6 @@ table {
   .col-sm-4 {
     float: left;
     width: 33.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -252,8 +222,6 @@ table {
   .col-xs-4 {
     float: left;
     width: 33.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -264,9 +232,7 @@ table {
 @media (min-width: 1200px) {
   .col-5 {
     float: left;
-    width: 41.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 41.66667%; } }
 
 @media (min-width: 1200px) {
   .col-offset-5 {
@@ -276,9 +242,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-5 {
     float: left;
-    width: 41.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 41.66667%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-5 {
@@ -289,8 +253,6 @@ table {
   .col-sm-5 {
     float: left;
     width: 41.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -302,8 +264,6 @@ table {
   .col-xs-5 {
     float: left;
     width: 41.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -314,9 +274,7 @@ table {
 @media (min-width: 1200px) {
   .col-6 {
     float: left;
-    width: 50%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 50%; } }
 
 @media (min-width: 1200px) {
   .col-offset-6 {
@@ -326,9 +284,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-6 {
     float: left;
-    width: 50%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 50%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-6 {
@@ -339,8 +295,6 @@ table {
   .col-sm-6 {
     float: left;
     width: 50%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -352,8 +306,6 @@ table {
   .col-xs-6 {
     float: left;
     width: 50%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -364,9 +316,7 @@ table {
 @media (min-width: 1200px) {
   .col-7 {
     float: left;
-    width: 58.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 58.33333%; } }
 
 @media (min-width: 1200px) {
   .col-offset-7 {
@@ -376,9 +326,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-7 {
     float: left;
-    width: 58.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 58.33333%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-7 {
@@ -389,8 +337,6 @@ table {
   .col-sm-7 {
     float: left;
     width: 58.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -402,8 +348,6 @@ table {
   .col-xs-7 {
     float: left;
     width: 58.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -414,9 +358,7 @@ table {
 @media (min-width: 1200px) {
   .col-8 {
     float: left;
-    width: 66.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 66.66667%; } }
 
 @media (min-width: 1200px) {
   .col-offset-8 {
@@ -426,9 +368,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-8 {
     float: left;
-    width: 66.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 66.66667%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-8 {
@@ -439,8 +379,6 @@ table {
   .col-sm-8 {
     float: left;
     width: 66.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -452,8 +390,6 @@ table {
   .col-xs-8 {
     float: left;
     width: 66.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -464,9 +400,7 @@ table {
 @media (min-width: 1200px) {
   .col-9 {
     float: left;
-    width: 75%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 75%; } }
 
 @media (min-width: 1200px) {
   .col-offset-9 {
@@ -476,9 +410,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-9 {
     float: left;
-    width: 75%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 75%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-9 {
@@ -489,8 +421,6 @@ table {
   .col-sm-9 {
     float: left;
     width: 75%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -502,8 +432,6 @@ table {
   .col-xs-9 {
     float: left;
     width: 75%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -514,9 +442,7 @@ table {
 @media (min-width: 1200px) {
   .col-10 {
     float: left;
-    width: 83.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 83.33333%; } }
 
 @media (min-width: 1200px) {
   .col-offset-10 {
@@ -526,9 +452,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-10 {
     float: left;
-    width: 83.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 83.33333%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-10 {
@@ -539,8 +463,6 @@ table {
   .col-sm-10 {
     float: left;
     width: 83.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -552,8 +474,6 @@ table {
   .col-xs-10 {
     float: left;
     width: 83.33333%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -564,9 +484,7 @@ table {
 @media (min-width: 1200px) {
   .col-11 {
     float: left;
-    width: 91.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 91.66667%; } }
 
 @media (min-width: 1200px) {
   .col-offset-11 {
@@ -576,9 +494,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-11 {
     float: left;
-    width: 91.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 91.66667%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-11 {
@@ -589,8 +505,6 @@ table {
   .col-sm-11 {
     float: left;
     width: 91.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -602,8 +516,6 @@ table {
   .col-xs-11 {
     float: left;
     width: 91.66667%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -614,9 +526,7 @@ table {
 @media (min-width: 1200px) {
   .col-12 {
     float: left;
-    width: 100%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 100%; } }
 
 @media (min-width: 1200px) {
   .col-offset-12 {
@@ -626,9 +536,7 @@ table {
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-12 {
     float: left;
-    width: 100%;
-    padding-right: 20px;
-    padding-bottom: 20px; } }
+    width: 100%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-offset-12 {
@@ -639,8 +547,6 @@ table {
   .col-sm-12 {
     float: left;
     width: 100%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -652,14 +558,16 @@ table {
   .col-xs-12 {
     float: left;
     width: 100%;
-    padding-right: 20px;
-    padding-bottom: 20px;
     margin-bottom: 1.3em; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
   .col-xs-offset-12 {
     float: left;
     margin-left: 100%; } }
+
+[class*='col-'] {
+  padding-right: 1.25em;
+  padding-bottom: 1.25em; }
 
 html {
   font-size: 16px; }
@@ -725,6 +633,19 @@ h1 {
     color: #fff;
     border-color: transparent; }
 
+/*
+  to account for:
+    range
+    search
+  
+    checkbox
+    radio
+*/
+select, input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 label, input, select, textarea {
   width: 100%;
   display: block;
@@ -733,23 +654,22 @@ label, input, select, textarea {
   padding: 0.7em;
   border-radius: 2px; }
 
+input {
+  background-color: #fff;
+  padding-top: 0.82em;
+  height: 3em; }
+
 label {
   font-weight: bold;
   padding: 0.3em 0 0.3em 0; }
 
 select {
   background-color: #fff;
-  border: solid 1px #111111;
   border-radius: 2px;
   background-image: linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(to right, #283593, #283593);
   background-position: calc(100% - 0.8em) 1em, calc(100% - 1.5em) 1em, 100% 0%;
   background-size: 0.7em 0.8em, 0.7em 0.7em, 3em 3em;
   background-repeat: no-repeat; }
-
-select, input, textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
 
 .triangle {
   display: block;
@@ -762,13 +682,25 @@ select, input, textarea {
   border-width: 10px;
   border-style: solid; }
 
-input {
+input, select {
   border: solid 1px #111111; }
+
+.input-group {
+  display: table; }
+  .input-group * {
+    float: left;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto 0; }
+  .input-group:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 input[type="checkbox"] {
   margin: 0;
   padding: 0;
-  border: solid 1px #111111;
   width: 2em;
   height: 2em; }
 
@@ -786,6 +718,28 @@ input[type="checkbox"]:after {
 
 input[type="checkbox"]:checked:after {
   visibility: visible; }
+
+input[type=range] {
+  border: 0; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.3em;
+  width: 1.3em;
+  border: solid 2px #0d8eff;
+  background-color: #fff;
+  margin-top: -0.6em;
+  transform: rotate(45deg);
+  border-radius: 0.3em;
+  box-shadow: 1px 1px 3px #AAAAAA; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.4em;
+  border: solid 2px #0d8eff;
+  background-color: #0d8eff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #AAAAAA; }
 
 button {
   padding: 0.7em;

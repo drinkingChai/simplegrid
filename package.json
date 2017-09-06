@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "node-sass -w scss/ -o css/",
+    "build:css": "node-sass -rw scss/ -o css/",
     "start:dev": "nodemon app.js"
   },
   "keywords": [],

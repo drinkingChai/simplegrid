@@ -5,7 +5,7 @@
 
 // grids
 $cols: 12;
-$gutter: 20px;
+$gutter: 1.25em;
 
 // rows
 .row {
@@ -28,8 +28,6 @@ $gutter: 20px;
   float: left;
   $width: ($i / $cols);
   width: percentage($width);
-  padding-right: $gutter;
-  padding-bottom: $gutter;
 }
 @mixin make-col-offset($i) {
   float: left;
@@ -73,5 +71,7 @@ $gutter: 20px;
   }
 }
 
-[class*='col-']:first-of-type {
+[class*='col-'] {
+  padding-right: $gutter;
+  padding-bottom: $gutter;
 }
