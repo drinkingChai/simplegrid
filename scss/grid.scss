@@ -6,7 +6,6 @@
 // grids
 $cols: 12;
 $gutter: 20px;
-$view-height: create-vh();
 
 // rows
 .row {
@@ -16,7 +15,12 @@ $view-height: create-vh();
     clear: both;
   }
 
-  margin: $gutter;
+  margin: $gutter 0 $gutter $gutter;
+}
+
+.strap-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 // columns
@@ -24,13 +28,14 @@ $view-height: create-vh();
   float: left;
   $width: ($i / $cols);
   width: percentage($width);
-  padding: 0;
+  padding-right: $gutter;
+  padding-bottom: $gutter;
 }
 @mixin make-col-offset($i) {
   float: left;
   $width: ($i / $cols);
   margin-left: percentage($width);
-  padding: 0;
+  // padding: 0;
 }
 @for $i from 1 through $cols {
   .col-#{$i} {
@@ -74,6 +79,6 @@ $view-height: create-vh();
   }
 }
 
-[class*='col-']:last-of-type {
-  // padding-right: 0;
+[class*='col-']:first-of-type {
+  // margin-left: -1*$gutter;
 }
