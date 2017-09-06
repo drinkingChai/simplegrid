@@ -16,6 +16,9 @@ $gutter: 20px;
   }
 
   margin: $gutter 0 $gutter $gutter;
+  @include make-media(0px, $breakpoint-sm) {
+    margin-right: $gutter;
+  }
 }
 
 .strap-container {
@@ -35,7 +38,6 @@ $gutter: 20px;
   float: left;
   $width: ($i / $cols);
   margin-left: percentage($width);
-  // padding: 0;
 }
 @for $i from 1 through $cols {
   .col-#{$i} {

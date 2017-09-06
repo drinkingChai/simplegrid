@@ -56,6 +56,9 @@ table {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .row {
+      margin-right: 20px; } }
 
 .strap-container {
   max-width: 900px;
@@ -745,7 +748,7 @@ h1 {
   border-radius: 2px;
   border: solid 1px #AAAAAA; }
   .btn-red {
-    background-color: #de0c00;
+    background-color: #f80e00;
     color: #fff;
     border-color: transparent; }
   .btn-blue {
@@ -753,7 +756,8 @@ h1 {
     color: #fff;
     border-color: transparent; }
   .btn-orange {
-    background-color: #ffa04e;
+    background-color: #FF851B;
+    color: #fff;
     border-color: transparent; }
   .btn-green {
     background-color: #2ECC40;

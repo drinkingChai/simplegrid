@@ -11,18 +11,8 @@
 .btn {
   @include make-btn;
 
-  &-red { background-color: darken($red, 17%); color: $white; border-color: transparent; }
+  &-red { background-color: darken($red, 12%); color: $white; border-color: transparent; }
   &-blue { background-color: $blue; color: $white; border-color: transparent; }
-  &-orange { background-color: lighten($orange, 10%); border-color: transparent; }
+  &-orange { background-color: $orange; color: $white; border-color: transparent; }
   &-green { background-color: $green; color: $white; border-color: transparent; }
-  // &-red { }
-
-  // &-primary {
-  //   background-color: $secondary;
-  //   border-color: transparent;
-  // }
-  // &-secondary {
-  //   background-color: $primary;
-  //   border-color: transparent;
-  // }
 }
