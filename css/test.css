@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -734,6 +735,102 @@ h1 {
 
 .text-italic {
   font-style: italic; }
+
+.btn {
+  padding: 0.7em;
+  font-size: 1em;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 1px #AAAAAA; }
+  .btn-red {
+    background-color: #de0c00;
+    color: #fff;
+    border-color: transparent; }
+  .btn-blue {
+    background-color: #0074D9;
+    color: #fff;
+    border-color: transparent; }
+  .btn-orange {
+    background-color: #ffa04e;
+    border-color: transparent; }
+  .btn-green {
+    background-color: #2ECC40;
+    color: #fff;
+    border-color: transparent; }
+
+label, input, select, textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+  padding: 0.7em;
+  border-radius: 2px; }
+
+label {
+  font-weight: bold;
+  padding: 0.3em 0 0.3em 0; }
+
+select {
+  background-color: #fff;
+  border: solid 1px #111111;
+  border-radius: 2px;
+  background-image: linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(to right, #283593, #283593);
+  background-position: calc(100% - 0.8em) 1em, calc(100% - 1.5em) 1em, 100% 0%;
+  background-size: 0.7em 0.8em, 0.7em 0.7em, 3em 3em;
+  background-repeat: no-repeat; }
+
+select, input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.triangle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: #111111;
+  border-bottom: transparent;
+  border-width: 10px;
+  border-style: solid; }
+
+input {
+  border: solid 1px #111111; }
+
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  border: solid 1px #111111;
+  width: 2em;
+  height: 2em; }
+
+input[type="checkbox"]:after {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  content: "✓";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  visibility: hidden; }
+
+input[type="checkbox"]:checked:after {
+  visibility: visible; }
+
+button {
+  padding: 0.7em;
+  font-size: 1em;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 1px #AAAAAA;
+  background-color: #fff; }
 
 img {
   width: 100%; }

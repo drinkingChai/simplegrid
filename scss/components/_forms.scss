@@ -1,0 +1,86 @@
+@import "_colors.scss";
+@import "_shared.scss";
+
+// forms
+label, input, select, textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+  padding: 0.7em;
+  border-radius: 2px;
+}
+
+label { font-weight: bold; padding: 0.3em 0 0.3em 0; }
+select {
+  // need to remake the arrow
+  background-color: $white;
+  border: solid 1px $black;
+  border-radius: 2px;
+
+  background-image:
+    linear-gradient(135deg, $arrowcol 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, $arrowcol 50%),
+    linear-gradient(to right, $arrowbg, $arrowbg);
+
+  background-position:
+    calc(100% - 0.8em) 1em,
+    calc(100% - 1.5em) 1em,
+    100% 0%;
+
+  background-size:
+    0.7em 0.8em,
+    0.7em 0.7em,
+    3em 3em;
+
+  background-repeat: no-repeat;
+}
+select, input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.triangle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: $black;
+  border-bottom: transparent;
+  border-width: 10px;
+  border-style: solid;
+}
+input {
+  border: solid 1px $black;
+}
+
+// checkbox
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  border: solid 1px $black;
+  width: 2em;
+  height: 2em;
+}
+input[type="checkbox"]:after {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  content: "✓";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  visibility: hidden;
+}
+input[type="checkbox"]:checked:after {
+  visibility: visible;
+}
+
+// buttons
+button {
+  @include make-btn;
+  background-color: $white;
+}
