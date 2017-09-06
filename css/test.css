@@ -636,6 +636,8 @@ h1 {
 /*
   to account for:
     radio
+    remove flex from checkbox
+    animate check and radio
 */
 select, input, textarea {
   -webkit-appearance: none;
@@ -703,7 +705,8 @@ select {
   margin-right: 0;
   border-right: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
+  border-bottom-right-radius: 0;
+  width: 70%; }
 
 .input-group.search button {
   padding: 0.7em;

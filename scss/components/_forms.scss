@@ -4,6 +4,8 @@
 /*
   to account for:
     radio
+    remove flex from checkbox
+    animate check and radio
 */
 
 $inputheight: 3em;
@@ -72,7 +74,7 @@ select {
   &.serial {
     display: inline-block;
   }
-  
+
   & * {
     float: left;
     width: inherit;
@@ -100,6 +102,7 @@ select {
     border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    width: 70%;
   }
   & button {
     @include make-btn;

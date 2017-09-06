@@ -52,8 +52,6 @@
     <input type="number" name="" value="">
     <label>Email</label>
     <input type="email" name="" value="">
-    <label>color</label>
-    <input type="color" name="" value="">
   </div>
   <div class="col-4">
     <label>Datetime-local</label>
@@ -68,22 +66,49 @@
     <input type="range" name="" value="">
     <label>URL</label>
     <input type="url" name="" value="">
+     <label>color</label>
+    <input type="color" name="" value="">
   </div>
 </div>
 
 <div class="row">
-  <div class="input-group search">
-    <label>Search</label>
-    <input type="search" name="">
-    <button>Go</button>
+  <div class="col-6">
+    <div class="input-group search">
+      <label>Search</label>
+      <input type="search" name="">
+      <button>Go</button>
+    </div>
+    <div class="input-group check serial">
+      <label>Checkbox</label>
+      <input type="checkbox" name="">
+    </div>
+    <div class="input-group check serial">
+      <input type="checkbox" name="">
+      <label>Checkbox</label>
+    </div>
   </div>
-  <div class="input-group check serial">
-    <label>Checkbox</label>
-    <input type="checkbox" name="">
-  </div>
-  <div class="input-group check serial">
-    <input type="checkbox" name="">
-    <label>Checkbox</label>
+  <div class="col-6">
+    <form>
+      <div class="input-group">
+        <input type="radio" id="genderChoice1" name="gender" value="male">
+        <label for="genderChoice1">Male</label>
+      </div>
+
+      <div class="input-group">
+        <input type="radio" id="genderChoice2" name="gender" value="female">
+        <label for="genderChoice2">Female</label>
+      </div>
+
+      <div class="input-group">
+        <input type="radio" id="genderChoice3" name="gender" value="other">
+        <label for="genderChoice3">Other</label>
+      </div>
+
+      <div class="input-group">
+        <input type="radio" id="genderChoice4" name="gender" value="notSpecified">
+        <label for="genderChoice4">Prefer not to specify</label>
+      </div>
+    </form> 
   </div>
 </div>
 
