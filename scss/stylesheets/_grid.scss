@@ -49,21 +49,3 @@ body { font-size: 100%; }
 
 
 // hr
-hr {
-  color: $primary;
-  background-color: $primary;
-  border-color: $primary;
-  border-style: solid;
-  border-width: 1px;
-}
-
-@mixin make-btn {
-  padding: 0.7em;
-  font-size: 1em;
-  background-color: $white;
-  border: 0;
-  cursor: pointer;
-  border-radius: 2px;
-  border: solid 1px $gray;
-}
-// buttons * component *

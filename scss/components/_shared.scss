@@ -1,11 +1,13 @@
+$gutter: 20px;
+
 @mixin make-btn {
   padding: 0.7em;
   font-size: 1em;
   background-color: $white;
   border: 0;
   cursor: pointer;
-  border-radius: 2px;
-  border: solid 1px $gray;
+  border-radius: 3px;
+  border: solid 2px $gray;
 }
 
 .btn {
