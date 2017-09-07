@@ -18,7 +18,7 @@ $silver: #DDDDDD;
 $white: #fff;
 
 $darkgray: darken($gray, 40%);
-$inputborder: lighten($black, 40%);
+$inputborder: $darkgray;
 $arrowbg: $darkgray;
 $arrowcol: #fff;
 // $rangecol: lighten(#0074D9, 10%);

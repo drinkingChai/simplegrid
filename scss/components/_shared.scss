@@ -7,14 +7,31 @@ $gutter: 20px;
   border: 0;
   cursor: pointer;
   border-radius: 3px;
-  border: solid 2px $gray;
+  border: solid 1px $darkgray;
+}
+@mixin make-hover($color) {
+  border-color: $color;
+  color: $color;
+  transition: background-color 0.3s, color 0.2s;
+  &:hover {
+    color: $white;
+    background-color: $color;
+  }
 }
 
 .btn {
   @include make-btn;
+  font-weight: bold;
 
-  &-red { background-color: darken($red, 12%); color: $white; border-color: transparent; }
-  &-blue { background-color: $blue; color: $white; border-color: transparent; }
-  &-orange { background-color: $orange; color: $white; border-color: transparent; }
-  &-green { background-color: $green; color: $white; border-color: transparent; }
+  // &-red { border-color: $red; color: $red }
+  &-blue { border-color: $blue; color: $blue; }
+  &-orange { border-color: $orange; color: $orange; }
+  &-green { border-color: $green; color: $green; }
+  &-olive { border-color: $olive; color: $olive; }
+
+  &-red { @include make-hover($red); }
+  &-blue { @include make-hover($blue); }
+  &-orange { @include make-hover($orange); }
+  &-green { @include make-hover($green); }
+  &-olive { @include make-hover($olive); }
 }

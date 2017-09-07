@@ -3,23 +3,9 @@
 
 /*
   to account for:
-    remove flex from checkbox
-    animate check
+    make search expand full width
+    clean up and optimize
 */
-
-@mixin make-radio {
-  content: "";
-  width: 1.5em;
-  height: 1.5em;
-  display: inline-block;
-  margin-right: 0.75em;
-  vertical-align: -0.5em;
-  border-radius: 1em;
-  border-width: 2px;
-  border-style: solid;
-  // transform: rotate(45deg);
-  transition: background-color 0.5s;
-}
 
 $inputheight: 3em;
 
@@ -29,8 +15,8 @@ select, input, textarea {
   -moz-appearance: none;
   appearance: none;
 
-  border: solid 2px $inputborder;
-  border-radius: 3px;
+  border: solid 1px $inputborder;
+  border-radius: 2px;
 }
 
 // forms
@@ -47,14 +33,14 @@ input {
   height: $inputheight;
 }
 
-label { font-weight: bold; padding: 0.3em 0 0.3em 0; }
+label { padding: 0.3em 0 0.3em 0; }
 select {
   // need to remake the arrow
   background-color: $white;
 
   background-image:
-    linear-gradient(135deg, $arrowcol 50%, transparent 50%),
-    linear-gradient(45deg, transparent 50%, $arrowcol 50%),
+    linear-gradient(135deg, $arrowcol 45%, transparent 50%),
+    linear-gradient(45deg, transparent 45%, $arrowcol 50%),
     linear-gradient(to right, $arrowbg, $arrowbg);
 
   background-position:
@@ -122,46 +108,51 @@ select {
     border-color: $inputborder;
   }
 }
-.input-group.check {
-  & input {
-    margin-top: 0.5em;
-  }
-}
 
 // checkbox
 input[type="checkbox"] {
-  margin: 0;
-  padding: 0;
-  width: 1.75em;
-  height: 1.75em;
-}
-input[type="checkbox"]:after {
-  background-color: $white;
-  display: flex;
-  flex-direction: column;
-  color: $white;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-}
-input[type="checkbox"]:checked:after {
-  content: "✓";
-  background-color: $darkgray;
+  display: none;
+  & + label { padding-right: 1em; }
+  & + label::before {
+    box-sizing: border-box;
+    padding-top: 0.2em;
+    content: " ";
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-right: 0.75em;
+    border: solid 1px $darkgray;
+    vertical-align: -40%;
+  }
+  &:checked + label::before {
+    background:
+      linear-gradient(135deg, transparent 47%, $black 50%, transparent 53%),
+      linear-gradient(45deg, transparent 47%, $black 50%, transparent 53%)
+    ;
+  }
 }
 
 // radios
-input[type="radio"] { display: none; }
 input[type="radio"] {
+  display: none;
   & + label { padding-right: 1em; }
   & + label::before {
-    @include make-radio;
-    border-color: $darkgray;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-right: 0.75em;
+    vertical-align: -0.5em;
+    border-radius: 1em;
+    border: solid 1px $darkgray;
+    // transition: background 0.2s;
+    background: radial-gradient(circle at center, $darkgray 45%, transparent 50%);
+    background-size: 0;
+    background-repeat: no-repeat;
   }
   &:checked + label::before {
-    @include make-radio;
-    border-color: $darkgray;
-    background-color: $darkgray;
+    background-size: 1.5em;
   }
 }
 
@@ -176,7 +167,6 @@ input[type=range]::-webkit-slider-thumb {
   border: solid 1px $rangecol;
   background-color: #fff;
   margin-top: -0.8em;
-  // transform: rotate(45deg);
   border-radius: 1em;
   // box-shadow: 1px 1px 3px $gray;
 
