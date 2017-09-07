@@ -51,15 +51,11 @@ table {
   box-sizing: border-box; }
 
 .row {
-  margin: 1.25em 0 1.25em 1.25em; }
+  margin: 1.25em 0.625em 1.25em 0.625em; }
   .row:after {
     content: "";
     display: table;
     clear: both; }
-
-.strap-container {
-  max-width: 900px;
-  margin: 0 auto; }
 
 @media (min-width: 1200px) {
   .col-1 {
@@ -566,8 +562,7 @@ table {
     margin-left: 100%; } }
 
 [class*='col-'] {
-  padding-right: 1.25em;
-  padding-bottom: 1.25em; }
+  padding: 10px; }
 
 html {
   font-size: 16px; }

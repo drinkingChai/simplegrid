@@ -15,12 +15,7 @@ $gutter: 1.25em;
     clear: both;
   }
 
-  margin: $gutter 0 $gutter $gutter;
-}
-
-.strap-container {
-  max-width: 900px;
-  margin: 0 auto;
+  margin: $gutter $gutter/2 $gutter $gutter/2;
 }
 
 // columns
@@ -72,6 +67,5 @@ $gutter: 1.25em;
 }
 
 [class*='col-'] {
-  padding-right: $gutter;
-  padding-bottom: $gutter;
+  padding: 10px;
 }
