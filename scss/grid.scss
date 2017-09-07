@@ -18,6 +18,9 @@ $gutter: 1.25em;
   margin: $gutter $gutter/2 $gutter $gutter/2;
 }
 
+[class*='w-'] { margin: 0 auto; }
+.w-90 { width: 90%; &-escape { margin-left: -10%; margin-right: -10%; }}
+
 // columns
 @mixin make-col($i) {
   float: left;

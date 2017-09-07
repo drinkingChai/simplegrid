@@ -9,12 +9,16 @@
   <body>
 
     <nav>
-      <li class="logo"><a href="/">GridIt!</a></li>
-      <li><a href="/formdemo">Form Demo</a></li>
-      <!-- <li><a href="">Form Demo</a></li> -->
+      <ul class="w-90">
+        <li class="logo"><a href="/">GridIt!</a></li>
+        <li><a href="/formdemo">Form Demo</a></li>
+        <!-- <li><a href="">Form Demo</a></li> -->
+      </ul>
     </nav>
 
-    {% block content %}{% endblock %}
+    <main class="w-90">
+      {% block content %}{% endblock %}
+    </main>
 
     <footer>
       <p>Test site!</p>

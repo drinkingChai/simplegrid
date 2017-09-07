@@ -19,3 +19,6 @@ nav li {
     padding: 1em;
   }
 }
+
+nav ul.w-90 li:first-child a { padding-left: 0; }
+nav ul.w-90 li:last-child a { padding-right: 0; }

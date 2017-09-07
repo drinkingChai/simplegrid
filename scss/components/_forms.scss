@@ -112,8 +112,9 @@ select {
 // checkbox
 input[type="checkbox"] {
   display: none;
-  & + label { padding-right: 1em; }
+  & + label { padding-right: 1em; cursor: pointer; }
   & + label::before {
+    cursor: pointer;
     box-sizing: border-box;
     padding-top: 0.2em;
     content: " ";
@@ -136,8 +137,9 @@ input[type="checkbox"] {
 // radios
 input[type="radio"] {
   display: none;
-  & + label { padding-right: 1em; }
+  & + label { padding-right: 1em; cursor: pointer; }
   & + label::before {
+    cursor: pointer;
     content: "";
     width: 1.5em;
     height: 1.5em;
