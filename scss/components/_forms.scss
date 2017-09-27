@@ -15,8 +15,7 @@ select, input, textarea {
   -moz-appearance: none;
   appearance: none;
 
-  border: solid 1px $inputborder;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 // forms
@@ -44,8 +43,8 @@ select {
     linear-gradient(to right, $arrowbg, $arrowbg);
 
   background-position:
-    calc(100% - 0.8em) 1em,
-    calc(100% - 1.5em) 1em,
+    calc(100% - 0.8em) 1.2em,
+    calc(100% - 1.5em) 1.2em,
     100% 0%;
 
   background-size:
@@ -105,7 +104,6 @@ select {
     @include make-btn;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-color: $inputborder;
   }
 }
 
@@ -149,12 +147,14 @@ input[type="radio"] {
     border-radius: 1em;
     border: solid 1px $darkgray;
     // transition: background 0.2s;
-    background: radial-gradient(circle at center, $darkgray 45%, transparent 50%);
-    background-size: 0;
+    background: radial-gradient(circle at center, $white 45%, $darkgray 50%);
+    background-size: 1.5em;
     background-repeat: no-repeat;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   &:checked + label::before {
-    background-size: 1.5em;
+    background: radial-gradient(circle at center, $darkgray 0%, $darkgray 30%, $white 35%, $white 45%, $darkgray 50% );
   }
 }
 
@@ -170,6 +170,7 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #fff;
   margin-top: -0.8em;
   border-radius: 1em;
+  //box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   // box-shadow: 1px 1px 3px $gray;
 
 }

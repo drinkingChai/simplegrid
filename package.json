@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "node-sass -rw scss/ -o css/",
-    "start:dev": "nodemon app.js"
+    "start:dev": "node-sass -rw scss/ -o css/ & nodemon app.js"
   },
   "keywords": [],
   "author": "",
