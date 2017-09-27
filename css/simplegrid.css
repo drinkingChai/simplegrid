@@ -628,14 +628,17 @@ select, input, textarea, button, [class*='btn-'] {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.18); }
 
 .btn {
-  padding: 0.7em;
-  font-size: 1em;
-  background-color: #fff;
-  border: 0;
-  cursor: pointer;
-  border-radius: 5px;
-  border: solid 2px #444444;
   font-weight: bold; }
+  .btn-small-blue {
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 2px #444444;
+    border-color: #0074D9;
+    color: #0074D9; }
   .btn-blue {
     border-color: #0074D9;
     color: #0074D9; }

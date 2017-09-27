@@ -35,11 +35,6 @@ select, input, textarea, button, [class*='btn-'] {
   font-weight: bold;
   // can make small buttons with 0 padding!
 
-  &-small-blue {
-    @include make-btn(0.2em 0.5em)
-    border-color: $blue; color: $blue;
-  }
-
   // &-red { border-color: $red; color: $red }
   &-blue { border-color: $blue; color: $blue; }
   &-orange { border-color: $orange; color: $orange; }
