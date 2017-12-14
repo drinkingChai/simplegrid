@@ -6,7 +6,7 @@ $gutter: 20px;
   background-color: $white;
   border: 0;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
   border: solid 2px $darkgray;
 }
 @mixin make-hover($color) {

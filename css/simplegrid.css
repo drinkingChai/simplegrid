@@ -635,7 +635,7 @@ select, input, textarea, button, [class*='btn-'] {
     background-color: #fff;
     border: 0;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
     border: solid 2px #444444;
     border-color: #0074D9;
     color: #0074D9; }
@@ -712,7 +712,7 @@ select, input, textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 5px; }
+  border-radius: 2px; }
 
 label, input, select, textarea {
   width: 100%;
@@ -779,7 +779,7 @@ select {
   background-color: #fff;
   border: 0;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
   border: solid 2px #444444;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -855,7 +855,7 @@ button {
   background-color: #fff;
   border: 0;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
   border: solid 2px #444444;
   background-color: #fff; }
 

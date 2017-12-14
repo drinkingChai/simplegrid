@@ -4,17 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "node-sass -rw scss/ -o css/",
-    "start:dev": "node-sass -rw scss/ -o css/ & nodemon app.js"
+    "build:css": "node-sass -rw scss/ -o css/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3"
   },
   "dependencies": {
-    "express": "^4.15.4",
-    "nunjucks": "^3.0.1"
+    "node-sass": "^4.5.3"
   }
 }
