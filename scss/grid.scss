@@ -1,1 +1,74 @@
-// SCSS!
+@import "_reset.scss";
+@import "_responsive.scss";
+
+* { box-sizing: border-box;}
+
+// grids
+$cols: 12;
+$gutter: 1.25em;
+
+// rows
+.row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  margin: $gutter $gutter/2 $gutter $gutter/2;
+}
+
+[class*='w-'] { margin: 0 auto; }
+.w-90 { width: 90%; &-escape { margin-left: -10%; margin-right: -10%; }}
+
+// columns
+@mixin make-col($i) {
+  float: left;
+  $width: ($i / $cols);
+  width: percentage($width);
+}
+@mixin make-col-offset($i) {
+  float: left;
+  $width: ($i / $cols);
+  margin-left: percentage($width);
+}
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    @include make-media-min($breakpoint-lg) { @include make-col($i); };
+  }
+  .col-offset-#{$i} {
+    @include make-media-min($breakpoint-lg) { @include make-col-offset($i); };
+  }
+  .col-md-#{$i} {
+    @include make-media($breakpoint-md, $breakpoint-lg) { @include make-col($i); };
+  }
+  .col-md-offset-#{$i} {
+    @include make-media($breakpoint-md, $breakpoint-lg) { @include make-col-offset($i); };
+  }
+  .col-sm-#{$i} {
+    @include make-media($breakpoint-sm, $breakpoint-md) {
+      @include make-col($i);
+      margin-bottom: 1.3em;
+    };
+  }
+  .col-sm-offset-#{$i} {
+    @include make-media($breakpoint-sm, $breakpoint-md) {
+      @include make-col-offset($i);
+    };
+  }
+  .col-xs-#{$i} {
+    @include make-media(0px, $breakpoint-sm) {
+      @include make-col($i);
+      margin-bottom: 1.3em;
+    };
+  }
+  .col-xs-offset-#{$i} {
+    @include make-media(0px, $breakpoint-sm) {
+      @include make-col-offset($i);
+    };
+  }
+}
+
+[class*='col-'] {
+  padding: 10px;
+}

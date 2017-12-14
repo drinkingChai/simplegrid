@@ -1,0 +1,24 @@
+@import "_colors.scss";
+
+nav {
+  background-color: $darkgray;
+  color: $white;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+
+  &.logo a { font-size: 1.2em; }
+
+  & a {
+    cursor: pointer;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 1em;
+  }
+}
+
+nav ul.w-90 li:first-child a { padding-left: 0; }
+nav ul.w-90 li:last-child a { padding-right: 0; }

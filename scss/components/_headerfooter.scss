@@ -1,0 +1,17 @@
+@import "_colors.scss";
+
+header, footer {
+  background-color: $darkgray;
+  color: $white;
+}
+
+header {
+  height: 2em;
+  padding: 1em;
+}
+
+footer {
+  height: 7em;
+  padding: 1em;
+  text-align: center;
+}

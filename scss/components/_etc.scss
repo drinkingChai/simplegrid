@@ -1,0 +1,10 @@
+// loading div
+@import "_colors.scss";
+
+hr {
+  color: $darkgray;
+  background-color: $darkgray;
+  border-color: $darkgray;
+  border-style: solid;
+  border-width: 1px;
+}
